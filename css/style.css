@@ -14,6 +14,7 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 section {
@@ -224,6 +225,104 @@ header nav .slide-btn {
   font-size: 1.7rem;
   color: gray;
   line-height: 3rem;
+}
+
+.product {
+  background: whitesmoke;
+  -webkit-clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.product .product-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.5rem;
+}
+
+.product .product-container .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.product .product-container .image img {
+  width: 100%;
+}
+
+.product .product-container .product-details {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.product .product-container .product-details h2 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.product .product-container .product-details span {
+  font-size: 3rem;
+}
+
+.product .product-container .product-details p {
+  font-size: 1.7rem;
+  -webkit-columns: gray;
+          columns: gray;
+  line-height: 3rem;
+  margin-top: 1rem;
+}
+
+.product .product-container .product-details .product-colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.5rem;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.product .product-container .product-details .product-colors .product-color {
+  width: 3rem;
+  height: 3rem;
+  border-radius: .5rem;
+  background: black;
+  cursor: pointer;
+}
+
+.product .product-container .product-details .product-colors .product-color:last-child {
+  background: purple;
+}
+
+.product .product-container .product-details .product-sizes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.5rem;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.product .product-container .product-details .product-sizes .product-size {
+  border: .1rem solid black;
+  font-size: 2rem;
+  padding: .5rem 1rem;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
