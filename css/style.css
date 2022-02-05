@@ -131,7 +131,6 @@ header nav .slide-btn {
 
 .home .slider-wrapper .slide {
   width: 100vw;
-  text-align: center;
   position: relative;
   padding-top: 2rem;
 }
@@ -141,7 +140,7 @@ header nav .slide-btn {
   max-height: 70rem;
   border-radius: 50%;
   background-color: #369e62;
-  margin: 0 auto;
+  margin-left: 15%;
 }
 
 .home .slider-wrapper .slide .image.purple {
@@ -171,15 +170,15 @@ header nav .slide-btn {
   border: .1rem solid gray;
   position: absolute;
   top: 5rem;
-  left: 15%;
+  left: 8%;
 }
 
 .home .slider-wrapper .slide h2 {
   color: white;
   font-size: 4rem;
   position: absolute;
-  right: 12%;
-  bottom: 40%;
+  right: 20%;
+  bottom: 55%;
 }
 
 .home .slider-wrapper .slide .btn {
@@ -188,8 +187,8 @@ header nav .slide-btn {
   color: white;
   font-size: 2rem;
   position: absolute;
-  right: 12%;
-  bottom: 30%;
+  right: 22%;
+  bottom: 45%;
 }
 
 .service .box-container {
@@ -323,6 +322,134 @@ header nav .slide-btn {
   font-size: 2rem;
   padding: .5rem 1rem;
   cursor: pointer;
+}
+
+.product .product-container .product-details .product-sizes .product-size.active {
+  background: black;
+  color: white;
+}
+
+.product .product-container .product-details .btn {
+  float: right;
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+  background: black;
+  color: white;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.buy-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+.buy-container.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.buy-container form {
+  max-width: 60rem;
+  padding: 2rem;
+  background-color: white;
+  margin-top: 10rem;
+}
+
+.buy-container form #close {
+  float: right;
+  font-size: 2rem;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  background: gray;
+  cursor: pointer;
+}
+
+.buy-container form h3 {
+  font-size: 2rem;
+  color: gray;
+  margin-bottom: 1rem;
+}
+
+.buy-container form label {
+  font-size: 1.7rem;
+}
+
+.buy-container form .box {
+  width: 100%;
+  margin: 1rem 0;
+  text-transform: none;
+  border-bottom: .1rem solid gray;
+  padding: 1rem;
+}
+
+.buy-container form .box:focus {
+  border: .1rem solid gray;
+}
+
+.buy-container form .img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.5rem;
+  gap: 1rem;
+}
+
+.buy-container form .img-container img {
+  height: 8rem;
+}
+
+.buy-container form .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.buy-container form .card-container .card-box {
+  border-bottom: .1rem solid gray;
+  padding: 0 1rem;
+  padding-bottom: 1rem;
+}
+
+.buy-container form .btn {
+  width: 100%;
+  background: #369e62;
+  padding: 1rem;
+  color: white;
+  font-size: 1.7rem;
+  margin-top: 2rem;
 }
 
 @media (max-width: 1200px) {

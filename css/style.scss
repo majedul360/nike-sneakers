@@ -98,13 +98,12 @@ header {
 }
 
 // home section start 
-
 .home {
     background: url(../img/home.jpg) no-repeat center;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 84%);
     overflow: hidden;
 
-    .slider-wrapper {
+     .slider-wrapper {
         width: 500vw;
         display: flex;
         flex-wrap: wrap;
@@ -112,16 +111,15 @@ header {
 
         .slide {
             width: 100vw;
-            text-align: center;
             position: relative;
             padding-top: 2rem;
 
             .image {
-                max-width: 70rem;
+                max-width:70rem;
                 max-height: 70rem;
                 border-radius: 50%;
                 background-color: #369e62;
-                margin: 0 auto;
+                margin-left:15%; 
 
                 &.purple {
                     background: rebeccapurple;
@@ -151,15 +149,15 @@ header {
                 border: .1rem solid gray;
                 position: absolute;
                 top: 5rem;
-                left:15%;
+                left:8%;
             }
 
             h2 {
                 color: white;
                 font-size: 4rem;
                 position: absolute;
-                right: 12%;
-                bottom: 40%;
+                right: 20%;
+                bottom: 55%;
             }
 
             .btn {
@@ -168,15 +166,15 @@ header {
                 color: white;
                 font-size: 2rem;
                 position: absolute;
-                right: 12%;
-                bottom: 30%;
+                right: 22%;
+                bottom: 45%;
             }
 
         }
-    }
-}
+    } 
+} 
 
-// services section start 
+// services section start
 
 .service {
     .box-container {
@@ -270,13 +268,123 @@ header {
                     font-size: 2rem;
                     padding: .5rem 1rem;
                     cursor: pointer;
+                    
+                    &.active {
+                        background: black;
+                        color: white;
+                    }
                 }
             }
             
-
+            .btn {
+                float:right;
+                padding:1rem 2rem;
+                margin-top: 3rem;
+                background: black;
+                color: white;
+                font-size: 1.7rem;
+                cursor: pointer;
+            }
         }
     }
 }
+
+// buy section 
+.buy-container {
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0, 0, .8);
+    display: none;
+
+    &.active {
+        display: flex;
+    }
+
+    form {
+        max-width: 60rem;
+        padding: 2rem;
+        background-color: white;
+        margin-top: 10rem;
+
+        #close {
+            float: right;
+            font-size: 2rem;
+            width: 3rem;
+            height: 3rem;
+            line-height: 3rem;
+            text-align: center;
+            background: gray;            
+            cursor: pointer;
+        }
+
+        h3 {
+            font-size: 2rem;
+            color: gray;
+            margin-bottom: 1rem;
+        }
+
+        label {
+            font-size:1.7rem;
+        }
+
+        .box {
+            width: 100%;
+            margin: 1rem 0;
+            text-transform: none;
+            border-bottom: .1rem solid gray;
+            padding: 1rem;
+
+            &:focus {
+                border: .1rem solid gray;
+            }
+        }
+
+        .img-container {
+            @include flex(center);
+            gap: 1rem;
+
+            img {
+                height: 8rem;
+            }
+        }
+
+        .card-container {
+            @include flex(center);
+            justify-content: space-between;
+            margin-top: 1rem;
+
+            .card-box {
+                border-bottom: .1rem solid gray;                
+                padding: 0 1rem;
+                padding-bottom: 1rem;
+            }
+        }
+
+        .btn {
+            width: 100%;
+            background: #369e62;
+            padding: 1rem;;
+            color: white;
+            font-size: 1.7rem;
+            margin-top:2rem;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 // media quearies 
