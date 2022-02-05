@@ -461,7 +461,59 @@ header {
     }
 }
 
+// footer 
+footer {
+    padding: 3rem 8%;
 
+    .box-container {
+        @include flex(center);
+
+        .box {
+            flex: 1 1 30rem;
+
+            h3 {
+                font-size: 2rem;
+                margin-bottom: 1.5rem;
+            }
+
+            a {
+                font-size: 1.7rem;
+                color: gray;
+                margin: 1rem 0;
+                display: block;
+            }
+            
+            form {
+                margin-bottom:2rem;    
+
+                .email {
+                    padding: .5rem 1rem;
+                    border:.1rem solid black;
+                    text-transform: none;
+                }
+
+                .btn {
+                    background: black;
+                    color: white;
+                    padding: .5rem;
+                    border: .1rem solid black;
+                }
+            }
+
+            .icons {
+                i {
+                    font-size: 1.7rem;
+                    color: black;
+                }
+
+                p {
+                    font-size: 1.7rem;
+                    color: gray;
+                }
+            }
+        }
+    }
+}
 
 
 
@@ -476,6 +528,10 @@ header {
     section {
         padding: 3rem 5%;
     }
+
+    footer {
+        padding: 3rem 5%;
+    }
 }
 @media (max-width:991px) {
     html {
@@ -488,6 +544,10 @@ header {
     }
 
     section {
+        padding: 3rem 2rem;
+    }
+
+    footer {
         padding: 3rem 2rem;
     }
 }
