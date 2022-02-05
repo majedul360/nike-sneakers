@@ -452,6 +452,40 @@ header nav .slide-btn {
   margin-top: 2rem;
 }
 
+.gallary .box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.5rem;
+}
+
+.gallary .box-container .box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 35rem;
+          flex: 1 1 35rem;
+  padding: 3rem;
+}
+
+.gallary .box-container .box img {
+  height: 50rem;
+  width: 100%;
+}
+
+.gallary .box-container .box h3 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.gallary .box-container .box h3:nth-child(2) {
+  margin-bottom: 0;
+  margin-top: 1.5rem;
+}
+
 @media (max-width: 1200px) {
   header {
     padding: 2rem 5%;
