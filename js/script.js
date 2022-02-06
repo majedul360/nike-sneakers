@@ -88,7 +88,6 @@ let sizes = document.querySelectorAll('.product-sizes .product-size');
 
 
 
-
 slideBtn.forEach((slide,index) => {
   slide.addEventListener('click', () => {
     // change the slide 
@@ -109,7 +108,6 @@ slideBtn.forEach((slide,index) => {
   
   });
 });
-
 
 // change product img color 
 colors.forEach((color,index) => {
@@ -135,7 +133,6 @@ sizes.forEach((size) => {
 
 let buyModule = document.querySelector('.buy-container');
 let closeBtn = document.querySelector('#close');
-let buyForm = document.querySelector('.buy-container form');
 let btn = document.querySelector('.product .btn');
 
 btn.addEventListener('click', () => {
